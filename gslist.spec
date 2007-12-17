@@ -10,7 +10,6 @@ Group:		Networking/Other
 License:	GPL
 URL:		http://aluigi.altervista.org/papers.htm#gslist
 Source0:	%{name}.zip
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Gslist is a command-line game servers browser and heartbeats sender,
