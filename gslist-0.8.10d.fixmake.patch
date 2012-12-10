@@ -1,0 +1,15 @@
+--- gslist-0.8.10d/Makefile.fixmake	2012-03-21 00:07:54.000000000 +0400
++++ gslist-0.8.10d/Makefile	2012-11-02 16:25:24.684822024 +0400
+@@ -11,8 +11,10 @@ O	= $(SRC:.c=.o)
+ all:	gslist gslistsql
+ 
+ gslist:	
+-	$(CC) $(SRC) $(CFLAGS) -o gslist $(LIBS) -DGSWEB
+-	$(CC) $(SRC) $(CFLAGS) -o gslistsql $(SQLIBS) $(LIBS) -DGSWEB -DSQL
++	$(CC) $(SRC) $(CFLAGS) -o $@ $(LIBS) -DGSWEB
++
++gslistsql:	
++	$(CC) $(SRC) $(CFLAGS) -o $@ $(SQLIBS) $(LIBS) -DGSWEB -DSQL
+ 
+ clean:
+ 	rm -f gslist gslistsql src/gslist.o src/enctype1_decoder.o src/enctype2_decoder.o src/enctype_shared.o src/enctypex_decoder.o src/mydownlib.o
