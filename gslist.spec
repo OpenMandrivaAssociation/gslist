@@ -2,7 +2,7 @@
 %define	version	0.8.10d
 %define	release	1
 
-Summary:	Gslist is a command-line game servers browser and heartbeats sender
+Summary:	Command-line game servers browser and heartbeats sender
 Name:		%{name}
 Version:	%{version}
 Release:	%mkrel %{release}
