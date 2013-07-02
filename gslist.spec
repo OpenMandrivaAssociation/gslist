@@ -1,6 +1,6 @@
 %define	name	gslist
 %define	version	0.8.10d
-%define	release	1
+%define release 	2
 
 Summary:	Command-line game servers browser and heartbeats sender
 Name:		%{name}
@@ -29,13 +29,12 @@ can request informations, lets you to filter the servers list
 
 %build
 make clean
-%make CFLAGS="$RPM_OPT_FLAGS"
+%make CFLAGS="%{optflags}"
 
 %install
 %makeinstall_std PREFIX=%{buildroot}%{_prefix}
 
 %files
-%defattr(-,root,root)
 %doc gslist.txt
 %{_bindir}/%{name}
 %{_bindir}/%{name}sql
