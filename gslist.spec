@@ -1,6 +1,6 @@
 %define	name	gslist
 %define	version	0.8.10d
-%define release 	2
+%define release 	3
 
 Summary:	Command-line game servers browser and heartbeats sender
 Name:		%{name}
