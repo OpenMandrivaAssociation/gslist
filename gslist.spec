@@ -8,7 +8,7 @@ Version:	%{version}
 Release:	%mkrel %{release}
 Group:		Networking/Other
 License:	GPL
-URL:		http://aluigi.altervista.org/papers.htm#gslist
+URL:		https://aluigi.altervista.org/papers.htm#gslist
 Source0:	%{name}.zip
 source1:	.abf.yml
 patch0:		gslist-0.8.10d.fixmake.patch
