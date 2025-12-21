@@ -12,6 +12,7 @@ URL:		https://aluigi.altervista.org/papers.htm#gslist
 Source0:	%{name}.zip
 source1:	.abf.yml
 patch0:		gslist-0.8.10d.fixmake.patch
+BuildRequires:	make
 buildrequires:	GeoIP-devel
 buildrequires:	mysql-devel
 
