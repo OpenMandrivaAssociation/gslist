@@ -1,11 +1,11 @@
 %define	name	gslist
 %define	version	0.8.10d
-%define release 	3
+%define release 4
 
 Summary:	Command-line game servers browser and heartbeats sender
 Name:		%{name}
 Version:	%{version}
-Release:	%mkrel %{release}
+Release:	%{release}.1
 Group:		Networking/Other
 License:	GPL
 URL:		https://aluigi.altervista.org/papers.htm#gslist
